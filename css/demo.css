@@ -40,11 +40,11 @@
     /* theme color variations
      */
     --color-1-lighter               : hsla(177, 93%, 36%, 1);
-    --color-1-light                 : hsla(177, 93%, 26%, 1);
+    --color-1-light                 : hsl(196, 42%, 48%);
     --color-1-dark                  : hsla(177, 93%, 10%, 1);
     --color-1-darker                : hsla(177, 93%, 5%, 1);
     --color-2-lighter               : hsla(12, 67%, 58%, 1);
-    --color-2-light                 : hsla(12, 67%, 48%, 1);
+    --color-2-light                 : hsl(7, 69%, 57%);
     --color-2-dark                  : hsla(12, 67%, 28%, 1);
     --color-2-darker                : hsla(12, 67%, 18%, 1);
 

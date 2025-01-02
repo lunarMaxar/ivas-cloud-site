@@ -509,3 +509,69 @@
     })();
 
 })(document.documentElement);
+
+/* Timestamp
+ * ------------------------------------------------------ */
+document.addEventListener("DOMContentLoaded", function () {
+    // Select all elements containing "Updated" in the class or structure
+    const updateElements = document.querySelectorAll(".services-list__item-content p span strong");
+
+    const currentDate = new Date().toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+    });
+
+    updateElements.forEach(element => {
+        if (element.textContent.includes("Updated:")) {
+            element.parentElement.innerHTML = `<strong>Updated:</strong> ${currentDate}`;
+        }
+    });
+});
+
+/* Counter
+ * ------------------------------------------------------ */
+// Countdown timer script
+document.addEventListener("DOMContentLoaded", function () {
+    // Set the target date for the countdown: 31 December 2025, 23:59:59
+    const targetDate = new Date("December 31, 2025 23:59:59").getTime();
+
+    // Select the countdown elements in the DOM
+    const daysElement = document.querySelector(".ss-days");
+    const hoursElement = document.querySelector(".ss-hours");
+    const minutesElement = document.querySelector(".ss-minutes");
+    const secondsElement = document.querySelector(".ss-seconds");
+
+    // Function to calculate the time difference and update the DOM
+    function updateCountdown() {
+        const now = new Date().getTime(); // Get current time
+        const timeDifference = targetDate - now; // Calculate time remaining
+
+        if (timeDifference <= 0) {
+            // If the countdown is complete, set all values to zero
+            daysElement.textContent = "0";
+            hoursElement.textContent = "00";
+            minutesElement.textContent = "00";
+            secondsElement.textContent = "00";
+            return;
+        }
+
+        // Time calculations for days, hours, minutes, and seconds
+        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+        // Update the DOM elements with calculated values
+        daysElement.textContent = days;
+        hoursElement.textContent = hours.toString().padStart(2, '0'); // Ensure two-digit format
+        minutesElement.textContent = minutes.toString().padStart(2, '0');
+        secondsElement.textContent = seconds.toString().padStart(2, '0');
+    }
+
+    // Update the countdown every second
+    setInterval(updateCountdown, 1000);
+
+    // Initialise the countdown immediately
+    updateCountdown();
+});
