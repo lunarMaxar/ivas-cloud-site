@@ -34,4 +34,4 @@ The **IVAS Cloud Lab** is built and maintained by the passionate IVAS team, with
 
 ---
 
-⭐ **If you enjoy our work, please star this repository and join us in pushing the boundaries of digital art!** 🌟
+⭐ **If you enjoy our work, please star this repository and join us in pushing the boundaries of post-technological experimental art!** 🌟
