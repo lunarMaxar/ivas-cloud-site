@@ -31,7 +31,3 @@ The **IVAS Cloud Lab** is built and maintained by the passionate IVAS team, with
 ## 🔗 Visit Us
 - [IVAS Cloud Lab Website](https://ivas.cloud/)
 - [Independent Variable Art Space (IVAS) Main Site](https://www.ivas.cc/)
-
----
-
-⭐ **If you enjoy our work, please star this repository and join us in pushing the boundaries of post-technological experimental art!** 🌟
