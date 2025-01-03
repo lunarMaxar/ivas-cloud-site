@@ -18,7 +18,7 @@ The **IVAS Cloud Lab** is an evolving space within the larger **Independent Vari
 
 ## 📬 Connect With Us
 - 📧 Email: [info@ivas.cc](mailto:info@ivas.cc)
-- 🌍 Locations: Toronto, Canada | Guangzhou, China
+- 🌍 Locations: Toronto, Canada | Canton (Guangzhou), China
 - 💬 Follow us on [Facebook](https://www.facebook.com/ivartspaceo/)
 
 ---
